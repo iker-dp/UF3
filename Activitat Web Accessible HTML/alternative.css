@@ -22,24 +22,33 @@ nav {
     display: flex;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin-left: -40px;
+}
+
 nav a {
-    padding: 20px 25px;
+    padding: 22px 25px;
     color: black;
 }
 
 nav form {
     padding: 20px 25px;
     margin-left: auto;
+    color: black;
 }
 
-h2 {
+h1 {
     font-size: 60px;
     padding: 40px 0px 0px;
     text-align: center;
     font-weight: bolder;
 }
 
-h3 {
+h2 {
     font-size: 25px;
     padding: 30px 0 7px;
     font-weight: bold;
@@ -50,7 +59,7 @@ p {
     padding: 0px 80px;
 }
 
-#content {
+.content {
     display: flex;
     margin: 0px 100px 20px 100px;
 }

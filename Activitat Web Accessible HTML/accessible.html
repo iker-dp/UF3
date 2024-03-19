@@ -8,42 +8,45 @@
 <body>
 	<a class="skip-main" href="#main">Skip to main content</a>
 	<nav>
-		<a href="alternative.html"aria-labelledby="navigation">Alternative</a>
-    	<a href="#" aria-labelledby="navigation">Features</a>
-    	<a href="#" aria-labelledby="navigation">Pricing</a>
-    	<a href="#" aria-labelledby="navigation">About</a>
-    	<a href="#" aria-labelledby="navigation">Contact us</a>
-
-		<form id="searchbar" role="search">
-			<input type="text" placeholder="Search">
+        <ul>
+            <li><a href="alternative.html"aria-labelledby="navigation">Alternative</a></li>
+            <li><a href="#" aria-labelledby="navigation">Features</a></li>
+            <li><a href="#" aria-labelledby="navigation">Pricing</a></li>
+            <li><a href="#" aria-labelledby="navigation">About</a></li>
+            <li><a href="#" aria-labelledby="navigation">Contact us</a></li>
+            <li><a href="../colors.html" aria-labelledby="navigation">Colors</a></li>
+        </ul>
+		<form id="searchbar" role="searchbar">
+            <label for="search">Search: </label>
+			<input type="text" id="search">
 			<button type="submit">Search</button>
 		</form>
 	</nav>
 	<main id="main">
         <article>
-            <h2 aria-labelledby="article">Article title</h2>
+            <h1 aria-labelledby="article">Article title</h1>
             <p aria-labelledby="article">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <section aria-label="articleSubtitle1">
+                <h2 aria-labelledby="articleSubtitle1">Article subtitle #1</h2>
+                <div class="content" aria-labelledby="articleSubtitle1">
+                    <p aria-labelledby="articleSubtitle1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="/resources/dos-pinguinos.jpg" alt="Two penguins" aria-labelledby="articleSubtitle1">
+                </div>
+            </section>
+            <section aria-label="articleSubtitle2">
+                <h2 aria-labelledby="articleSubtitle2">Article subtitle #2</h2>
+                <div class="content" aria-labelledby="articleSubtitle2">
+                    <img src="/resources/oso-polar.jpg" alt="A polar bear" aria-labelledby="articleSubtitle2">
+                    <p aria-labelledby="articleSubtitle2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </section>
         </article>
-        <section aria-label="articleSubtitle1">
-            <h3 aria-labelledby="articleSubtitle1">Article subtitle #1</h3>
-            <div id="content" aria-labelledby="articleSubtitle1">
-                <p aria-labelledby="articleSubtitle1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <img src="/resources/dos-pinguinos.jpg" alt="A photo of two penguins" aria-labelledby="articleSubtitle1">
-            </div>
-        </section>
-        <section aria-label="articleSubtitle2">
-            <h3 aria-labelledby="articleSubtitle2">Article subtitle #2</h3>
-            <div id="content" aria-labelledby="articleSubtitle2">
-                <img src="/resources/oso-polar.jpg" alt="A photo of a polar bear" aria-labelledby="articleSubtitle2">
-                <p aria-labelledby="articleSubtitle2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </section>
     </main>
 </body>
 </html>
